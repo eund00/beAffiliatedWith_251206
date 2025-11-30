@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>뒤섞임</title>
+    <link rel="stylesheet" href="summer.css" />
+  </head>
+  <body>
+    <section class="intro _active">
+      <h1>준비되셨나요?</h1>
+      <p>
+        원하는 시를 선택하고,<br />
+        하고 싶은 말을 입력해주세요.
+      </p>
+      <div class="select-songs" id="songSelect">
+        <!-- 시 선택 체크박스 -->
+      </div>
+      <button class="next_btn" id="next_btn">시작하기</button>
+    </section>
 
+    <section class="user-input">
+      <h2>어떤 말을 넣고 싶으신가요?</h2>
+      <textarea
+        id="userText"
+        placeholder="오늘의 기분이나 요즘 드는 생각 등...무엇이든 자유로이 적어주세요."
+      ></textarea>
+      <button class="generateBtn" id="generateBtn">제출하기</button>
+    </section>
+
+    <section class="last_view">
+      <!-- 새 시 단어가 랜덤 배치됨 -->
+      <p>result</p>
+      <div class="canvas" id="canvas"></div>
+      <button class="resetBtn" id="resetBtn">초기화</button>
+    </section>
+    <script src="contents.js"></script>
+    <script src="summer.js"></script>
+  </body>
+</html>
