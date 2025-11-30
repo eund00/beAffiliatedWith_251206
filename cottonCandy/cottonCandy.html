@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>떨어짐</title>
+    <link rel="stylesheet" href="cottonCandy.css" />
+  </head>
+  <body>
+    <div id="intro">
+      <h1>준비되셨나요?</h1>
+      <p>시를 3개 이상 선택해주세요</p>
+      <div id="poemSelect">
+        <button data-index="0">솜뭉치</button>
+        <button data-index="1">나쁜 대화</button>
+        <button data-index="2">스물다섯 번째 서랍</button>
+        <button data-index="3">현대시작법</button>
+        <button data-index="4">훗치키스</button>
 
+        <button data-index="5">낮잠</button>
+        <button data-index="6">새벽기도 가면 뭐해요</button>
+        <button data-index="7">윈도우</button>
+
+        <button data-index="8">좀비 초콜릿</button>
+        <button data-index="9">토맛숲</button>
+
+        <button data-index="10">배스킨라빈스</button>
+
+        <button data-index="11">Chat(쳇)</button>
+        <button data-index="12">
+          후르츠 파르페 속 냉동 블루베리는 서른 다섯 개
+        </button>
+
+        <button data-index="13">마지막 생파, 생선은 거절!</button>
+
+        <button data-index="14">물증</button>
+        <button data-index="15">여름</button>
+
+        <button data-index="16">토마토사냥</button>
+
+        <button data-index="17">젤리뽀</button>
+
+        <button data-index="18">땅콩집</button>
+        <button data-index="19">아큐먼트</button>
+
+        <button data-index="20">시한부 히어로</button>
+
+        <button data-index="20">오묘(奧妙)</button>
+      </div>
+      <button id="startBtn">시작하기</button>
+    </div>
+
+    <div class="canvas" id="canvas"></div>
+
+    <div class="poem-output" id="poemOutputContainer">
+      <p>선택한 단어가 여기에 나타납니다.</p>
+      <div id="poemOutput"></div>
+    </div>
+
+    <div class="final-wrap" id="finalWrap">
+      <p class="tit">result</p>
+      <p class="final-poem" id="finalPoem"></p>
+      <br />
+      <button class="retryBtn" id="retryBtn">retry</button>
+    </div>
+    <div class="timer" id="timer">30</div>
+
+    <script src="contents.js"></script>
+    <script src="cottonCandy.js"></script>
+  </body>
+</html>
