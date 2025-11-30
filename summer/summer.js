@@ -63,6 +63,9 @@ generateBtn.addEventListener("click", () => {
   // 랜덤 섞기
   words.sort(() => Math.random() - 0.5);
 
+  // 25어절만 선택
+  words = words.slice(0, 20);
+
   // 캔버스에 단어 카드로 배치
   words.forEach((w) => {
     const span = document.createElement("span");
