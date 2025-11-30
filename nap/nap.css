@@ -84,6 +84,7 @@
   margin-right: -0.2rem;
   margin-top: -0.2rem;
   cursor: pointer;
+  display: none;
 }
 .poem_list-btn::before {
   content: "▶️";
