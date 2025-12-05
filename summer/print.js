@@ -12,6 +12,7 @@ function printOnlyArea() {
       <style>
         body { margin: 0; padding: 20px; }
         .canvas { font-size: 15px;padding: 10px;width: 220px;border:3px solid #111}
+        .word-card { margin-right: 3px; }
       </style>
     </head>
     <body>
@@ -41,5 +42,6 @@ function printOnlyArea() {
     printWindow.close();
   }, 150);
 }
+
 
 
