@@ -12,10 +12,11 @@ function printOnlyArea() {
       <style>
         body { margin: 0; padding: 20px; }
         #finalPoem { font-size: 15px;padding: 10px;width: 220px;border:3px solid #111}
+        #finalPoem span{background-color: #333;color: #fff;}
       </style>
     </head>
     <body>
-      <p style="padding-left: 15px">노골적으로 부속하며<br> ㅁ(미음)까지...</p>
+      <p style="padding-left: 15px">노골적으로 부속하며 ㅁ(미음)까지...</p>
       <p style="font-style: italic;">======= result ========<p>
       <p><span>${userNote}</span>님의 떨어짐....</p>
       ${printContents}
@@ -41,4 +42,3 @@ function printOnlyArea() {
     printWindow.close();
   }, 150);
 }
-
