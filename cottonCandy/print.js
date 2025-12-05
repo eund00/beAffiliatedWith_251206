@@ -12,6 +12,7 @@ function printOnlyArea() {
       <style>
         body { margin: 0; padding: 20px; }
         #finalPoem { font-size: 15px;padding: 10px;width: 220px;border:3px solid #111}
+        #final-poem span{margin-right: 3px;}
       </style>
     </head>
     <body>
@@ -41,4 +42,5 @@ function printOnlyArea() {
     printWindow.close();
   }, 150);
 }
+
 
