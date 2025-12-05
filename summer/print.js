@@ -16,7 +16,7 @@ function printOnlyArea() {
     </head>
     <body>
       <p style="padding-left: 15px">노골적으로 부속하며 ㅁ(미음)까지...</p>
-      <p style="font-style: italic;">======= result ========<p>
+      <p style="font-style: italic;">==== result ====<p>
       <p><span>${userNote}</span>님의 뒤섞임....</p>
       ${printContents}
       <p>
@@ -45,5 +45,6 @@ function printOnlyArea() {
     printWindow.close();
   }, 150);
 }
+
 
 
