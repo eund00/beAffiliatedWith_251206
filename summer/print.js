@@ -11,7 +11,7 @@ function printOnlyArea() {
       <title>Print</title>
       <style>
         body { margin: 0; padding: 20px; }
-        .canvas { font-size: 15px;padding: 10px;width: 220px;border:2px solid #000}
+        .canvas { font-size: 15px;padding: 10px;width: 220px;border:5px solid #000}
       </style>
     </head>
     <body>
@@ -45,6 +45,7 @@ function printOnlyArea() {
     printWindow.close();
   }, 150);
 }
+
 
 
 
