@@ -11,15 +11,15 @@ function printOnlyArea() {
       <title>Print</title>
       <style>
         body { margin: 0; padding: 20px; }
-        .canvas { font-size: 15px;padding: 10px;width: 220px;border:1px solid #ccc}
+        .canvas { font-size: 15px;padding: 10px;width: 220px;border:1px solid #000}
       </style>
     </head>
     <body>
-      <p style="padding-left: 15px">노골적으로 부속하며 ㅁ(미음)까지...</p>
+      <p>노골적으로 부속하며 ㅁ(미음)까지...</p>
       <p style="font-style: italic;">==== result ====<p>
       <p><span>${userNote}</span>님의 뒤섞임....</p>
       ${printContents}
-      <p>
+      <p style="font-size:">
         뒤섞인 
         문장들에서 
         힌트를 
@@ -45,6 +45,7 @@ function printOnlyArea() {
     printWindow.close();
   }, 150);
 }
+
 
 
 
