@@ -11,12 +11,12 @@ function printOnlyArea() {
       <title>Print</title>
       <style>
         body { margin: 0; padding: 20px; }
-        .canvas { font-size: 15px;padding: 10px;width: 220px;border:1px solid #000}
+        .canvas { font-size: 15px;padding: 10px;width: 220px;border:2px solid #000}
       </style>
     </head>
     <body>
       <p>노골적으로 부속하며 ㅁ(미음)까지...</p>
-      <p style="font-style: italic;">==== result ====<p>
+      <p style="font-style: italic;">====== result ======<p>
       <p><span>${userNote}</span>님의 뒤섞임....</p>
       ${printContents}
       <p style="font-size:">
@@ -45,6 +45,7 @@ function printOnlyArea() {
     printWindow.close();
   }, 150);
 }
+
 
 
 
