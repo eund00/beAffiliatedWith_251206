@@ -11,19 +11,16 @@ function printOnlyArea() {
       <title>Print</title>
       <style>
         body { margin: 0; padding: 20px; }
-        #finalPoem { font-size: 15px;padding: 10px;width: 220px;border:1px solid #ccc}
+        #finalPoem { font-size: 15px;padding: 10px;width: 220px;border:3px solid #111}
       </style>
     </head>
     <body>
-      <p style="padding-left: 15px">노골적으로 부속하며 ㅁ(미음)까지...</p>
+      <p style="padding-left: 15px">노골적으로 부속하며<br> ㅁ(미음)까지...</p>
       <p style="font-style: italic;">======= result ========<p>
       <p><span>${userNote}</span>님의 떨어짐....</p>
       ${printContents}
       <p>
-        떨어진 
-        문장들에서 
-        힌트를 
-        찾아보아요☘️
+        떨어진 문장들에서 힌트를 찾아보아요☘️
       </p>
       <p style="font-style: italic;">======================<p>
       <p style="font-size: 13px">
@@ -44,3 +41,4 @@ function printOnlyArea() {
     printWindow.close();
   }, 150);
 }
+
