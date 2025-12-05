@@ -33,10 +33,7 @@ function printOnlyArea() {
         ${dateString}
       </p>
       <p></p>
-      <p>end.</p>
-            <p></p>
-                  <p></p>
-                        <p></p>
+      <p style="padding-bottom: 20px;">end.</p>
     </body>
     </html>
   `;
@@ -51,6 +48,7 @@ function printOnlyArea() {
     printWindow.close();
   }, 150);
 }
+
 
 
 
