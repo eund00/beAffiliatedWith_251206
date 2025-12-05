@@ -28,7 +28,9 @@ function printOnlyArea() {
       <p style="font-style: italic;">======================<p>
       <p style="font-size: 13px">
         ${dateString}
-      <p>
+      </p>
+      <p></p>
+      <p>end.</p>
     </body>
     </html>
   `;
@@ -43,4 +45,5 @@ function printOnlyArea() {
     printWindow.close();
   }, 150);
 }
+
 
