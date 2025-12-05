@@ -22,18 +22,19 @@ function printOnlyArea() {
       <p>↓↓↓↓↓</p>
       ${printContents}
       <p>↑↑↑↑↑</p>
-      <p style="font-size:">
-        뒤섞인 
-        문장들에서 
-        힌트를 
-        찾아보아요☘️
+      <p>
+        뒤섞인 문장들에서 힌트를 찾아보아요☘️
       </p>
       <p style="font-style: italic;">======================<p>
-      <p style="font-size: 13px">
-        ${dateString}
-      </p>
-      <p></p>
+      <p style="font-size: 13px">${dateString}</p>
       <p style="padding-bottom: 20px;">end.</p>
+
+      <script>
+        window.onload = () => {
+          window.print();
+          window.close();
+        }
+      <\/script>
     </body>
     </html>
   `;
@@ -41,23 +42,4 @@ function printOnlyArea() {
   printWindow.document.open();
   printWindow.document.write(html);
   printWindow.document.close();
-
-  setTimeout(() => {
-    printWindow.focus();
-    printWindow.print();
-    printWindow.close();
-  }, 150);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
