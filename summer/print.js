@@ -31,6 +31,9 @@ function printOnlyArea() {
       </p>
       <p></p>
       <p>end.</p>
+            <p></p>
+                  <p></p>
+                        <p></p>
     </body>
     </html>
   `;
@@ -45,6 +48,7 @@ function printOnlyArea() {
     printWindow.close();
   }, 150);
 }
+
 
 
 
