@@ -1,23 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>노골적으로 부속하며 미음까지 - 이은주</title>
     <style>
-      body > h1, body> div {
-          max-width: 450px;
-          margin: 0 auto !important;
-          background-color: blue;
-          border-right: 1px solid #000;
-          border-left: 1px solid #000;
-          position: relative;
-          z-index: 99
+      body > h1,
+      body > div {
+        max-width: 450px;
+        margin: 0 auto !important;
+        background-color: blue;
+        border-right: 1px solid #000;
+        border-left: 1px solid #000;
+        position: relative;
+        z-index: 99;
+      }
+      .slider {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      .slider img {
+        display: block;
+        width: 100%;
+        border: 1px solid #333;
+        box-sizing: border-box;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        opacity: 0;
+        transition: opacity 2s ease;
+      }
+
+      .slider img:first-child {
+        position: relative;
+      }
+
+      .slider img.active {
+        opacity: 1;
+      }
+
+      .slider button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+
+        border: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+      }
+
+      .prev {
+        left: 10px;
+      }
+
+      .next {
+        right: 10px;
       }
     </style>
   </head>
-  <body style="margin: 0;background-color: #000;">
-    <video autoplay="" muted="" loop="" playsinline="" style="
+  <body style="margin: 0; background-color: #000">
+    <video
+      autoplay=""
+      muted=""
+      loop=""
+      playsinline=""
+      style="
         position: fixed;
         top: 0;
         left: 0;
@@ -25,10 +79,14 @@
         height: 100%;
         object-fit: cover;
         opacity: 35%;
-    ">
-      <source src="https://eund00.github.io/beAffiliatedWith_251206/bg.mp4" type="video/mp4">
+      "
+    >
+      <source
+        src="https://eund00.github.io/beAffiliatedWith_251206/bg.mp4"
+        type="video/mp4"
+      />
     </video>
-    <h1 style="margin: 0;background-color: #333;color: #fff;padding: 2rem;">
+    <h1 style="margin: 0; background-color: #333; color: #fff; padding: 2rem">
       <span style="font-style: italic">노골적으로 부속하고 있습니다.</span> :
       <span>ㅁ (미음)</span>
     </h1>
@@ -86,7 +144,7 @@
             background-color: #ccc;
             width: 100%;
           "
-          >전시를 구상하며 호티타카님과 나눈...</span
+          >전시를 구상하며 나눈 말조각...</span
         >
       </div>
       <br />
@@ -230,34 +288,284 @@
       <p style="color: #878787; font-size: 0.8rem">
         사용자가 입력한 모든 텍스트와 정보는 저장되지 않습니다!(안심하세요!)
       </p>
-      <ul style="padding: 0">
-        <li style="margin-left: 1rem; margin-top: 0.5rem">
-          첫 번째 :
-          <a style="padding-left: 0.4rem; color: #fff" href="nap/nap.html"
-            >흩어짐</a
+      <div style="padding: 0">
+        <div
+          style="
+            background: #ffffff2e;
+            padding: 5px;
+            box-sizing: border-box;
+            margin: 0.5rem 0.5rem;
+            padding: 0.8rem;
+            border-radius: 3px;
+          "
+        >
+          <p
+            style="
+              background-color: #ffffff7d;
+              color: #000;
+              padding: 2px 0px;
+              text-indent: 10px;
+              border-radius: 3px;
+            "
           >
-        </li>
-        <li style="margin-left: 1rem; margin-top: 0.5rem">
-          두 번째 :
+            첫 번째 :
+            <a style="padding-left: 0.4rem; color: #fff" href="nap/nap.html"
+              >흩어짐🖱️</a
+            >
+          </p>
+          <p style="font-size: 14px">
+            흩어지는 시 조각들을 감상할 수 있어요.<br />
+            마치 머릿속에 둥둥 떠다니는 것만 같죠…?<br />
+            <br />
+            태어나길 가지런히 정렬된 모습의 시였지만요.<br />
+            한 번쯤은 마구 흩트려놓고 싶었어요.
+          </p>
+          <div class="slider">
+            <img src="img/11.png" alt="" />
+            <img src="img/12.png" alt="" />
+            <img src="img/13.png" alt="" />
+
+            <button type="button" class="prev">‹</button>
+            <button type="button" class="next">›</button>
+          </div>
           <a
-            style="padding-left: 0.4rem; color: #fff"
+            style="
+              background-color: #bdbdbdb5;
+              text-align: center;
+              display: block;
+              border-radius: 5px;
+              margin: 1rem;
+              color: #000;
+              font-weight: bold;
+              text-decoration: none;
+            "
+            href="nap/nap.html"
+            >입장하기👆</a
+          >
+        </div>
+        <div
+          style="
+            margin-top: 2rem !important;
+            background: #ffffff2e;
+            padding: 5px;
+            box-sizing: border-box;
+            margin: 0.5rem 0.5rem;
+            padding: 0.8rem;
+            border-radius: 3px;
+          "
+        >
+          <p
+            style="
+              background-color: #ffffff7d;
+              color: #000;
+              padding: 2px 0px;
+              text-indent: 10px;
+              border-radius: 3px;
+            "
+          >
+            두 번째 :
+            <a
+              style="padding-left: 0.4rem; color: #fff"
+              href="cottonCandy/cottonCandy.html"
+              >떨어짐🖱️</a
+            >
+          </p>
+          <p style="font-size: 14px">
+            시의 제목을 골라요.<br />
+            3개 이상 고르셔야 합니다.<br />
+            <br />
+            그리고 시작하기를 누르면요.<br />
+            하늘에 시 조각이 떨어져요.<br />
+            <br />
+            ​클릭(터치) 하시면 됩니다.<br />
+            30초 제한 있어요.<br />
+            <br />
+
+            <span style="
+    color: #b5b5b5;
+    text-decoration: line-through;
+">
+              원래 10초였는데요. <br />
+              촉박하다는 이슈가 있어서 수정되었습니다; </span
+            ><br />
+            <br />
+            ​시간 안에 재미있는 문장을 만들어 보아요.<br />
+            중복으로 클릭(터치) 하는 건 안 됩니다.<br />
+            <br />
+            ​재미있는 결과가 나올지도 모르잖아요?
+          </p>
+          <div class="slider">
+            <img src="img/21.png" alt="" />
+            <img src="img/22.png" alt="" />
+            <img src="img/23.png" alt="" />
+
+            <button type="button" class="prev">‹</button>
+            <button type="button" class="next">›</button>
+          </div>
+          <a
+            style="
+              background-color: #bdbdbdb5;
+              text-align: center;
+              display: block;
+              border-radius: 5px;
+              margin: 1rem;
+              color: #000;
+              font-weight: bold;
+              text-decoration: none;
+            "
             href="cottonCandy/cottonCandy.html"
-            >떨어짐</a
+            >입장하기👆</a
           >
-        </li>
-        <li style="margin-left: 1rem; margin-top: 0.5rem">
-          세 번째 :
-          <a style="padding-left: 0.4rem; color: #fff" href="summer/summer.html"
-            >뒤섞임</a
+        </div>
+        <div
+          style="
+            margin-top: 2rem !important;
+            background: #ffffff2e;
+            padding: 5px;
+            box-sizing: border-box;
+            margin: 0.5rem 0.5rem;
+            padding: 0.8rem;
+            border-radius: 3px;
+          "
+        >
+          <p
+            style="
+              background-color: #ffffff7d;
+              color: #000;
+              padding: 2px 0px;
+              text-indent: 10px;
+              border-radius: 3px;
+            "
           >
-        </li>
-      </ul>
+            세 번째 :
+            <a
+              style="padding-left: 0.4rem; color: #fff"
+              href="summer/summer.html"
+              >뒤섞임🖱️</a
+            >
+          </p>
+          <p style="font-size: 14px">
+            뒤섞임은요.<br />
+            하나 이상의 시를 선택하고요.<br />
+            <br />
+            ​사용자가 넣고 싶은 말을 넣으면요.<br />
+            제 시와 여러분의 시가 뒤섞여요.<br />
+            <br />
+            ​잘 뒤섞는다면 재미있는 결과가 나오지 않을까요?
+          </p>
+          <div class="slider">
+            <img src="img/31.png" alt="" />
+            <img src="img/32.png" alt="" />
+            <img src="img/33.png" alt="" />
+
+            <button type="button" class="prev">‹</button>
+            <button type="button" class="next">›</button>
+          </div>
+          <a
+            style="
+              background-color: #bdbdbdb5;
+              text-align: center;
+              display: block;
+              border-radius: 5px;
+              margin: 1rem;
+              color: #000;
+              font-weight: bold;
+              text-decoration: none;
+            "
+            href="summer/summer.html"
+            >입장하기👆</a
+          >
+        </div>
+      </div>
+      <div
+        style="
+          margin-top: 2rem !important;
+          background: #ffffff2e;
+          padding: 5px;
+          box-sizing: border-box;
+          margin: 0.5rem 0.5rem;
+          padding: 0.8rem;
+          border-radius: 3px;
+        "
+      >
+        <p style="font-size: 14px">
+          프린트 버튼을 클릭하면 닉네임을 입력하라고 해요.<br />
+          <br />
+          ​닉네임을 입력하면 사진과 같이 연결된 프린터에서 인쇄물이
+          나와요…인데요.<br />
+          지금 여러분은 프린터가 연결되어 있지 않죠.<br />
+          <br />
+          ​전시에서는 영수증 프린터를 연결해서 인쇄물로 나오게끔 했거든요.<br />
+          <br />
+          ​캡처 버튼을 넣을까 고심해 보았지만 귀찮음 이슈가 있었습니다.<br />
+          (원하신다면) 언젠가는 넣을 게요.
+        </p>
+        <div class="slider" style="overflow: hidden;">
+          <img src="img/41.png" alt="" />
+          <img src="img/42.png" alt="" />
+          <img src="img/43.png" alt="" />
+
+          <button type="button" class="prev">‹</button>
+          <button type="button" class="next">›</button>
+        </div>
+        <p style="    color: #bf2626;
+    padding: 0 0.5rem;
+    font-weight: bold;
+    border-radius: 3px;
+    margin: 0.3rem 0;
+    font-size: 14px;
+    text-decoration: underline;">**이외에 무언가 어렵거나 이상하거나 복잡스럽다 싶은 사항이 있으면 저에게 꼬옥 알려주세요!!**</p>
     </div>
+          <hr style="margin-top: 4rem" />
+      <div>
+        <p style="font-size: 20px">💌마치며…</p>
+        <p>
+          여기까지입니다.<br />
+          당시에는 먹고사는 일과 시를 쓰는 일 그리고 학교까지….<br />
+          ​<br />
+          돌이켜보면 폭풍 같은 날들이었어요.<br />
+          그렇지만 힘들었던 만큼 제게 남은 것들이 많은 거 같아서 큰 만족이
+          되어요.<br />
+          <br />
+          ​ 제가 시를 쓰고 코딩을 하고 이런 일들을 받아들이기까지 너무나
+          힘들었는데요.<br />
+          그래도 저라는 사람을 나타낼 수 있는 아이덴티티로 스며듦에 감사해요.<br />
+          ​<br />
+          저는 이것저것 손을 대는 편이고<br />
+          그래서인지 무엇 하나 아주 깊고 완전하다고 말하기는 어렵지만요.<br />
+          ​<br />
+          재미있게 봐주셨으면 좋겠어요.<br />
+          여러분들의 재미가 제 삶의 동력이거든요.<br />
+          ​<br />
+          감사합니다. (꾸벅)
+        </p>
+      </div>
   </body>
+  <script>
+    document.querySelectorAll(".slider").forEach((slider) => {
+      const slides = slider.querySelectorAll("img");
+      const prev = slider.querySelector(".prev");
+      const next = slider.querySelector(".next");
+      let index = 0;
+
+      slides[0].classList.add("active");
+      function moveSlide(newIndex) {
+        slides[index].classList.remove("active");
+        index = (newIndex + slides.length) % slides.length;
+        slides[index].classList.add("active");
+      }
+
+      next.addEventListener("click", () => {
+        moveSlide(index + 1);
+      });
+
+      prev.addEventListener("click", () => {
+        moveSlide(index - 1);
+      });
+
+      setInterval(() => {
+        moveSlide(index + 1);
+      }, 4500);
+    });
+  </script>
 </html>
-
-
-
-
-
-
